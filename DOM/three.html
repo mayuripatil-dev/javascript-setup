@@ -11,7 +11,7 @@
 </body>
 
 <script>
-    document.createElement('div')
+    document.createElement('div');
     console.log(div);
     div.className = "main"
     div.id = (Math.random() * 10 + 1)
@@ -24,3 +24,35 @@
    document.body.appendChild(div)
 </script>
 </html>
+
+Dot . — accessing something inside something else
+
+Square brackets are commonly used for three things.
+1. Creating an array
+2. Accessing an array item
+3. Using a computed object property
+
+Curly braces have several jobs in JavaScript. The surrounding code tells you which job they are doing.
+1. Creating an object
+2. Defining a function body
+3. Defining a block of code
+
+Round brackets () — parentheses
+Main job: calling functions and grouping expressions
+
+Single equals = means assignment
+let age = 19;
+div.style.color = "white";
+
+2. Colon : separates a property name from its value in an object
+const user = {
+    name: "Mayuri",
+    age: 19
+};
+ Read name: "Mayuri" as “the property name has the value Mayuri.”
+
+ Symbol	Main meaning	Example
+=	Assign a value	age = 19
+:	Separate object key and value	age: 19
+===	Strict equality check	age === 19
+!==	Strict inequality check	age !== 19
