@@ -1,0 +1,251 @@
+<!-- # Projects related to DOM
+# Solution Code
+
+## Project 1
+
+````Javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .game {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .colors {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+
+        .color-box {
+            border: 2px solid #ffffff40;
+            border-radius: 16px;
+            padding: 25px 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .color-box:hover {
+            transform: translateY(-5px);
+        }
+
+        #red { background: #f43f5e; }
+        #green { background: #10b981; }
+        #blue { background: #3b82f6; }
+        #yellow {
+            background: #facc15;
+            color: #111827;
+        }
+        #purple { background: #9333ea; }
+
+        .preview {
+            margin-top: 28px;
+            padding: 35px 20px;
+            border: 2px solid #818cf8;
+            border-radius: 20px;
+            background: #1f2937;
+            transition: background-color 0.3s;
+        }
+
+        .preview p {
+            color: #cbd5e1;
+        }
+
+        #currentColor {
+            font-size: 30px;
+        }
+
+        .score {
+            color: #cbd5e1;
+        }
+
+        #reset {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #111827;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .colors {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .color-box:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="game">
+        <h1>🎨 Color Changer</h1>
+        <p class="subtitle">Pick a color and paint your preview!</p>
+
+        <div class="colors">
+            <button class="color-box" id="red">🔴 Red</button>
+            <button class="color-box" id="green">🟢 Green</button>
+            <button class="color-box" id="blue">🔵 Blue</button>
+            <button class="color-box" id="yellow">🟡 Yellow</button>
+            <button class="color-box" id="purple">🟣 Purple</button>
+        </div>
+
+        <section class="preview" id="preview">
+            <p>✨ Current Color</p>
+            <h2 id="currentColor">White</h2>
+        </section>
+
+        <p class="score">
+            Colors selected: <span id="score">0</span>
+        </p>
+
+        <button id="reset">↻ Reset Game</button>
+    </main>
+
+    <script>
+        // Select the buttons
+        const redButton = document.querySelector("#red");
+        const greenButton = document.querySelector("#green");
+        const blueButton = document.querySelector("#blue");
+        const yellowButton = document.querySelector("#yellow");
+        const purpleButton = document.querySelector("#purple");
+
+        // Select the preview and score
+        const preview = document.querySelector("#preview");
+        const currentColor = document.querySelector("#currentColor");
+        const scoreDisplay = document.querySelector("#score");
+        const resetButton = document.querySelector("#reset");
+
+        let score = 0;
+
+        // Change the preview color and update the score
+        function changeColor(color) {
+            preview.style.backgroundColor = color;
+
+            currentColor.textContent =
+                color.charAt(0).toUpperCase() + color.slice(1);
+
+            score++;
+            scoreDisplay.textContent = score;
+        }
+
+        // Listen for button clicks
+        redButton.addEventListener("click", function() {
+            changeColor("red");
+        });
+
+        greenButton.addEventListener("click", function() {
+            changeColor("green");
+        });
+
+        blueButton.addEventListener("click", function() {
+            changeColor("blue");
+        });
+
+        yellowButton.addEventListener("click", function() {
+            changeColor("yellow");
+        });
+
+        purpleButton.addEventListener("click", function() {
+            changeColor("purple");
+        });
+
+        // Reset the game
+        resetButton.addEventListener("click", function() {
+            preview.style.backgroundColor = "#1f2937";
+            currentColor.textContent = "White";
+
+            score = 0;
+            scoreDisplay.textContent = score;
+        });
+    </script>
+
+</body>
+
+    
+
+    <!-- <h1>Color Changer</h1>
+
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+    <button id="yellow">Yellow</button>
+    <button id="purple">Purple</button> -->
+
+</body>
+
+  
+<!-- <script>
+    // Step 1: Select all four buttons
+    const redButton = document.querySelector("#red");
+    const greenButton = document.querySelector("#green");
+    const blueButton = document.querySelector("#blue");
+    const yellowButton = document.querySelector("#yellow");
+ const purpleButton = document.querySelector("#purple");
+
+   
+    // Step 2: Make the Red button work
+    redButton.addEventListener("click", function() {
+        document.body.style.backgroundColor = "red";
+    });
+
+    
+    // Step 3: Make the Green button work
+    greenButton.addEventListener("click", function() {
+        document.body.style.backgroundColor = "green";
+    });
+
+    // Step 4: Make the Blue button work
+    blueButton.addEventListener("click", function() {
+        document.body.style.backgroundColor = "blue";
+    });
+
+    // Step 5: Make the Yellow button work
+    yellowButton.addEventListener("click", function() {
+        document.body.style.backgroundColor = "yellow";
+    });
+
+    purpleButton.addEventListener("click", function() {
+        document.body.style.backgroundColor = "purple";
+    });
+</script> -->
+
+
+</html>
