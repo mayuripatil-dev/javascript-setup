@@ -7,7 +7,7 @@
 
 
  //console.log(tinderUser),
-
+// reugularUser
  const regularUser = {    //regularUser=it is given as it is output
     email: "some@gmail.com",
     fullname:{
@@ -54,5 +54,4 @@ console.log(tinderUser);
 console.log(Object.keys(tinderUser));   //keys means main elements given above like id,email
 console.log(Object.values(tinderUser));  //values means elements given to keys like id=1,email=m@google
 console.log(Object.entries(tinderUser));  //entries means it gives us keys and values in array form making index of all elements
-
 console.log(tinderUser.hasOwnProperty('IsLoggedIn')); //hasOwnProperty = it gives output in boolean in true or false if given elemnt is present or not according to that
