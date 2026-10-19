@@ -16,6 +16,7 @@ console.log(hundreds.toLocaleString('en-IN'));
 
 //++++++++++++++++++++++++++++......MATHS.......++++++++++++++++++++++++++//
 
+//Add,Sub,Multiply,Div
 console.log(Math);
 console.log(Math.abs(-4)); // [-] becomes [+]
 console.log(Math.abs(4)); // [+]stays [+]
