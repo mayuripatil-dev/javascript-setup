@@ -44,6 +44,8 @@ const myCoding = [
    
 ]
 
+
+//loops
 myCoding.forEach ((item)=>{
     console.log(item.languageName);
 })
