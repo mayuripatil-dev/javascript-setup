@@ -10,6 +10,8 @@ console.log(typeof myDate);
 // let myCreatedDate = new Date(2023,0,23,5,3)
 let myCreatedDate = new Date()
 
+// date and time explanantion
+
 console.log(myCreatedDate.toDateString());
 console.log(myCreatedDate.toLocaleString());
 let myTimestamp = Date.now()
