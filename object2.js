@@ -5,6 +5,8 @@
  tinderUser.name = "mayuri"
  tinderUser.isLoggedIn = false
 
+ //Objects 2
+ 
 
  //console.log(tinderUser),
 // reugularUser
