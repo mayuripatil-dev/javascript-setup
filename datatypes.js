@@ -6,6 +6,7 @@ console.log("mayuri")
 
 let name = "mayuri"
 let age = 19 
+//datatypes
 
 let isLoggedIn = "false"
 let state = "null"
