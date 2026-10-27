@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM codes</title>
+</head>
+<body  style="background-color: #212121; color: #fff;">
+    
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+
+    // function tells JavaScript you are defining a function.
+    // addLanguage is the function's name.
+// langName is a parameter — a placeholder for the language you want to add.
+// { } enclose the function's instructions.
+    function addLanguage(langName){
+        const li =  document.createElement('li')
+    li.innerHTML = `${langName}`
+//     Why prefer textContent over innerHTML here?
+// - textContent inserts text without interpreting it as HTML.
+// - innerHTML interprets the supplied string as HTML markup.
+
+li.textContent = langName;
+   
+
+// .language selects an element with the class language.
+//  #language selects an element with the ID language.
+// Think of querySelector() as telling JavaScript:
+// "Find the first element on my page that matches this description."
+
+    document.querySelector('.language').
+    appendChild(li)
+
+    // createElement() — create the element.
+// textContent — give it text.
+// querySelector() — find where it belongs.
+// appendChild() — put it there.
+
+    }
+
+    addLanguage("python")
+    addLanguage("typescript")
+
+  function addOptiLanguage(langName){
+    const li = document.createElement('li');
+ li.textContent = langName;
+    document.querySelector('.language').appendChild(li)
+  }
+addOptiLanguage('golang')
+
+//Edit
+const secondlang = document.querySelector("li:nth-child(2)")
+
+//secondLang.innerHTML = "mojo"
+const newli = document.createElement('li')
+newli.textContent ="Mojo"
+secondlang.replaceWith(newli)
+
+//edit
+const firstlang = document.querySelector("li:first-child")
+fisrtlang.outerHTML = <li>'Typescript'</li>
+
+//     innerHTML — content inside an element
+// <li>Javascript</li>
+// The innerHTML value is Javascript.
+// outerHTML — the element itself, including its tags
+// <li>Javascript</li>
+// The outerHTML value is the complete <li> element.
+//     
+
+//remove
+const lastlang = document.querySelector("li:last-child")
+lastlang.remove()
+</script>
+</html>
+
+//DOM is mainly used to add things :
+
+Your code is about DOM manipulation in JavaScript. DOM manipulation is one of the most important skills for making interactive websites.
+For example, imagine you're building a real-world website:
+- A to-do app where clicking Add Task creates a new task.
+- A shopping website where adding a product updates the cart.
+- A learning website where you can add programming languages to a list.
+- An admin dashboard where you can add, edit, and delete users.
+
+
+li:first-child	An li that is the first child of its parent
+li:last-child	An li that is the last child of its parent
+li:nth-child(2)	An li that is the second child of its parent
+.language	The first element with class language
+#main	The first element with ID main
+
+
+
+
+
+
