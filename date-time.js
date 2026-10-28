@@ -11,7 +11,7 @@ console.log(typeof myDate);
 let myCreatedDate = new Date()
 
 // date and time explanantion
-
+// date and time
 console.log(myCreatedDate.toDateString());
 console.log(myCreatedDate.toLocaleString());
 let myTimestamp = Date.now()
