@@ -1,7 +1,7 @@
 //primitive datatypes
 
 //7 types : string ,number,boolean, null,undefined,symbol,bigint
-
+//data storing process
 const score = 100
 const scoreValue = 100.3
 
