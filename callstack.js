@@ -9,6 +9,7 @@ three()
  function three(){
     console.log("three")
  }
+ //call stack
 
  //callstack function
  one()
