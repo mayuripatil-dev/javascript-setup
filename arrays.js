@@ -7,7 +7,7 @@ const myArr2 = new Array(1,2,3,4,5)
 console.log(myArr[1]);
 //Arrays in javascript
 
-
+// Arrays.js
 // Array methods
  
 myArr.push(6)   //push is used to add values even if it is not mentioned as u can see here
