@@ -10,6 +10,7 @@
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
 })('mayuri')
+//ife in javascript
 
 // IFE =immediately invoked functions
 
