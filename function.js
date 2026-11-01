@@ -11,6 +11,8 @@ console.log("M");
  console.log("R");
  console.log("I");
 }
+
+//function in javascript
 //   functions
 sayMyName()
 
