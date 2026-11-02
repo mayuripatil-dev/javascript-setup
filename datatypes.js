@@ -7,7 +7,7 @@ console.log("mayuri")
 let name = "mayuri"
 let age = 19 
 //datatypes
-
+//datatypes
 let isLoggedIn = "false"
 let state = "null"
 
