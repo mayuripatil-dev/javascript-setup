@@ -13,6 +13,7 @@ for (let i = 0; i<=0; i++){
         console.log("5 is best number");
     }
 
+    //loops
     console.log(element);
 }
 for (let i=0;i<=10;i++){
