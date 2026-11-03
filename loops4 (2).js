@@ -14,6 +14,8 @@ for (const key in myObject){
  
 }
 
+//4th type of loop
+
 const programming = ["js","cpp","python"]
 
 for (const  key in programming){
