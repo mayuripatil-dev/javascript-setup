@@ -13,6 +13,8 @@ coding.forEach( (item) => {
     console.log(item);
 })
 
+//5th type of loop
+
 function printMe(item){
 console.log(item);
 }
