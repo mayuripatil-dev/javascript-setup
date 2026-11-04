@@ -6,7 +6,7 @@ console.log(balance);
 
 console.log(balance.toString().length);
 console.log(balance.toFixed(1)); //we can add decimal value that is after point in it
-
+//numbers.js
 const otherNumber = 23.8966
 
 console.log(otherNumber.toPrecision(3)); //precision value gives a number by doing round off of the valuebefore decimal
