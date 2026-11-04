@@ -6,7 +6,7 @@
 
 
 // }
-
+//loops
 for (let i = 0; i<=0; i++){
     const element =i;
     if (element == 5){
