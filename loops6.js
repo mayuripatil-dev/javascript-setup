@@ -5,7 +5,7 @@ const myNums = [1,2,3,4,5,6,7,8,9,10]
 //     num > 4 
 //     return num>4
 // })
-
+//loops no 6 in loop types
 //loops6.js
 //forEach method
 const newNums = []
