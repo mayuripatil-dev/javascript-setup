@@ -9,6 +9,8 @@ coding.forEach(  function (val){
      
 })
 
+//loop5.js
+
 coding.forEach( (item) => {
     console.log(item);
 })
