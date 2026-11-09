@@ -5,7 +5,7 @@
  tinderUser.name = "mayuri"
  tinderUser.isLoggedIn = false
 
-
+//object2.js
  //console.log(tinderUser),
 // reugularUser
  const regularUser = {    //regularUser=it is given as it is output
