@@ -12,7 +12,7 @@ for (let i = 0; i<=0; i++){
     if (element == 5){
         console.log("5 is best number");
     }
-
+//loops.js
     //loops
     console.log(element);
 }
