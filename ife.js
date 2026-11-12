@@ -15,3 +15,4 @@
 // IFE =immediately invoked functions
 
 //ife
+//ife.js
