@@ -4,7 +4,7 @@
 //     const element = index;
 //     console.log(element);
 
-
+//
 // }
 //loops
 for (let i = 0; i<=0; i++){
