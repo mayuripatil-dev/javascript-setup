@@ -8,6 +8,7 @@ const gamename = new String('mayurii')
 
 console.log (gamename[0]);
 console.log(gamename.__proto__);
+//strings.js
 
 console.log(gamename.length);
 console.log(gamename.toUpperCase());
