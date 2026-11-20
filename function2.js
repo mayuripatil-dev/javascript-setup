@@ -8,6 +8,7 @@ const user = {
     username : "MAyuri",
     price:299
 }
+//functions2.js
 
 function handelObject(anyobject){
      console.log(`Username is ${anyobject.username}and price is $(anyobject.price)`);
