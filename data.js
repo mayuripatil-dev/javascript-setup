@@ -8,7 +8,7 @@ const scoreValue = 100.3
 const isLoggedIn = false
 const outsideTemp = null
 let userEmail ;
-
+//data.js
 const id = Symbol("123")
 const anotherId = Symbol("123")
 
