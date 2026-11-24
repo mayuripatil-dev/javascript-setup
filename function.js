@@ -1,7 +1,7 @@
 
 
 //functions
-
+//fun
 function sayMyName(){  //syntax of function
 
 console.log("M");
