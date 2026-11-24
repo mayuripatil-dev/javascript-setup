@@ -9,7 +9,7 @@ const user = {
     }
 }
 //arrowfn.js
-
+//arrow
 user.welcomeMessage()
 user.username = "sam"
 user.welcomeMessage()
