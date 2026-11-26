@@ -11,6 +11,9 @@ console.log("M");
  console.log("R");
  console.log("I");
 }
+
+//function.js
+
 //fuction
 //function in javascript
 //   functions
