@@ -13,7 +13,7 @@ for (const key in myObject){
     console.log(`${key} shortcut is of ${myObject[key]}`);
  
 }
-
+//loops4
 const programming = ["js","cpp","python"]
 
 for (const  key in programming){
